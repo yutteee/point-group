@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div>
+  <QuestionCard v-bind:mainQuestion="this.question"></QuestionCard>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import QuestionCard from "../components/QuestionCard.vue"
 
 export default {
-  name: 'HomeView',
   components: {
-    HelloWorld
+    QuestionCard
+  },
+  data(){
+    return{
+      question: "分子は直線形ですか？"
+    }
   }
 }
 </script>
+
+<style scoped>
+
+</style>
