@@ -109,11 +109,6 @@ const routes = [
     component: DihedralN
   },
   {
-    path: '/NMirrordQ',
-    name: 'NMirrordQ',
-    component: NMirrordQ
-  },
-  {
     path: '/DihedralDiagonal',
     name: 'DihedralDiagonal',
     component: DihedralDiagonal
