@@ -21,9 +21,9 @@ export default {
   },
   data(){
     return{
-      question: "鏡映面がありますか(σですか)?",
-      yesLink: "/CsSpiegel",
-      noLink: "/InversionQ"
+      question: "n回回転軸がありますか(Cnですか)？",
+      yesLink: "/BiggestCnQ",
+      noLink: "/MirrorQ"
     }
   }
 }

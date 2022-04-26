@@ -21,9 +21,9 @@ export default {
   },
   data(){
     return{
-      question: "鏡映面がありますか(σですか)?",
-      yesLink: "/CsSpiegel",
-      noLink: "/InversionQ"
+      question: "分子をある角度回転させ、その回転軸に垂直な面に鏡映面はありますか(Snですか)?",
+      yesLink: "/SimpleSpiegel",
+      noLink: "/SimpleCyclic"
     }
   }
 }

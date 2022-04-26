@@ -21,9 +21,9 @@ export default {
   },
   data(){
     return{
-      question: "鏡映面がありますか(σですか)?",
-      yesLink: "/CsSpiegel",
-      noLink: "/InversionQ"
+      question: "5回回転軸がありますか(C5ですか)？",
+      yesLink: "/InversionHorizon",
+      noLink: "/OperationHorizon"
     }
   }
 }
