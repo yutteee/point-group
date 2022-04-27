@@ -26,6 +26,10 @@ export default {
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 .yes, .no {
     color: #fff;
     margin: 0 auto;

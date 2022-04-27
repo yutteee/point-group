@@ -1,40 +1,21 @@
 <template>
 <div>
-  <div class="qanda">
-    <QuestionCard v-bind:mainQuestion="this.question"></QuestionCard>
-    <AnswerButton
-      v-bind:yes="this.yesLink"
-      v-bind:no="this.noLink"
-    />
-  </div>
+  <h1>分子の点群の帰属を決定します。</h1>
+  <a href="/linerQ" class="start">start</a>
 </div>
 </template>
 
-<script>
-import QuestionCard from "../components/QuestionCard.vue"
-import AnswerButton from "../components/AnswerButton.vue"
-
-export default {
-  components: {
-    QuestionCard,
-    AnswerButton
-  },
-  data(){
-    return{
-      question: "分子は直線形ですか？",
-      yesLink: "/about",
-      noLink: "/about"
-    }
-  }
-}
-</script>
-
 <style scoped>
-.qanda {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 64px;
-  padding-bottom: 64px;
+.start {
+  height: 32px;
+  line-height: 32px;
+  display: block;
+  background-color: #54BAB9;
+  color: #fff;
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6px;
+  text-decoration: none;
 }
 </style>
