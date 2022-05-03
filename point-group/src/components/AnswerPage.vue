@@ -26,8 +26,9 @@ export default {
     text-align: center;
 }
 
+
 .home {
-  height: 32px;
+    height: 32px;
   line-height: 32px;
   display: block;
   background-color: #54BAB9;
@@ -37,5 +38,13 @@ export default {
   margin: 0 auto;
   border-radius: 6px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 599px){
+    img {
+        width:80%;
+        max-width: 80%;
+        height: auto;
+    }
 }
 </style>

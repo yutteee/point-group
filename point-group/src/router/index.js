@@ -29,6 +29,7 @@ import SimpleInversion from "../views/SimpleInversion.vue"
 import CyclicOne from "../views/CyclicOne.vue"
 import YesMirrorhQ from "../views/YesMirrorhQ.vue"
 import DihedralN from "../views/DihedralN.vue"
+import NMirrordQ from "../views/NMirrordQ.vue"
 
 Vue.use(VueRouter)
 
@@ -178,6 +179,11 @@ const routes = [
     name: 'CyclicOne',
     component: CyclicOne
   },
+  {
+    path: '/NMirrordQ',
+    name: 'NMirrordQ',
+    component: NMirrordQ
+  }
 ]
 
 const router = new VueRouter({
