@@ -1,7 +1,10 @@
 <template>
 <div>
   <div class="qanda">
-    <QuestionCard v-bind:mainQuestion="this.question"></QuestionCard>
+    <QuestionCard
+      v-bind:mainQuestion="this.question"
+      v-bind:annotation="this.boolean"
+    />
     <AnswerButton
       v-bind:yes="this.yesLink"
       v-bind:no="this.noLink"
@@ -22,6 +25,7 @@ export default {
   data(){
     return{
       question: "5回回転軸がありますか(C5ですか)？",
+      boolean: false,
       yesLink: "/InversionHorizon",
       noLink: "/OperationHorizon"
     }

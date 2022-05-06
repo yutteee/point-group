@@ -1,7 +1,10 @@
 <template>
 <div>
   <div class="qanda">
-    <QuestionCard v-bind:mainQuestion="this.question"></QuestionCard>
+    <QuestionCard
+      v-bind:mainQuestion="this.question"
+      v-bind:annotation="this.boolean"
+    />
     <AnswerButton
       v-bind:yes="this.yesLink"
       v-bind:no="this.noLink"
@@ -21,7 +24,8 @@ export default {
   },
   data(){
     return{
-      question: "nが最大になるn回回転軸(Cn)を主軸とする。鏡映面が主軸に対して垂直にありますか(σhですか)?",
+      question: "鏡映面が主軸に対して垂直にありますか(σhですか)?",
+      boolean: true,
       yesLink: "/CyclicHorizontal",
       noLink: "/NMirrorvQ"
     }

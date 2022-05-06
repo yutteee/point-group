@@ -1,7 +1,10 @@
 <template>
 <div>
   <div class="qanda">
-    <QuestionCard v-bind:mainQuestion="this.question"></QuestionCard>
+    <QuestionCard
+      v-bind:mainQuestion="this.question"
+      v-bind:annotation="this.boolean"
+    />
     <AnswerButton
       v-bind:yes="this.yesLink"
       v-bind:no="this.noLink"
@@ -21,7 +24,8 @@ export default {
   },
   data(){
     return{
-      question: "nが最大になるn回回転軸(Cn)を主軸とする。主軸に直交するn本のC2軸(nC2)がありますか？",
+      question: "主軸に直交するn本のC2軸(nC2)がありますか？",
+      boolean: true,
       yesLink: "/YesMirrorhQ",
       noLink: "/NoMirrorhQ"
     }
