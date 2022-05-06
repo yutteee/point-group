@@ -13,7 +13,7 @@ export default {
     },
     data() {
         return{
-            PhotoUrl: require('../assets/Ih.png'),
+            PhotoUrl: require('../assets/c60.png'),
             AnswerName: 'Ih'
         }
     }
